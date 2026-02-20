@@ -1,0 +1,239 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .animate-slide-up {
+            animation: slideUp 0.6s ease-out;
+        }
+        .animate-bounce-slow {
+            animation: bounce 2s infinite;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        .animate-glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        .animate-rotate-slow {
+            animation: rotate 20s linear infinite;
+        }
+        .animate-pulse-gentle {
+            animation: pulseGentle 4s ease-in-out infinite;
+        }
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        .animate-slide-in-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        .animate-scale-in {
+            animation: scaleIn 0.6s ease-out;
+        }
+        .animate-wiggle {
+            animation: wiggle 1s ease-in-out infinite;
+        }
+        .animate-bounce-in {
+            animation: bounceIn 0.8s ease-out;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.7s ease-out;
+        }
+        .animate-text-shimmer {
+            animation: textShimmer 2s linear infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+            to { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4); }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes pulseGentle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(50px); opacity:0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes wiggle {
+            0%, 7% { transform: rotateZ(0); }
+            15% { transform: rotateZ(-15deg); }
+            20% { transform: rotateZ(10deg); }
+            25% { transform: rotateZ(-10deg); }
+            30% { transform: rotateZ(6deg); }
+            35% { transform: rotateZ(-4deg); }
+            40%, 100% { transform: rotateZ(0); }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes textShimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        @keyframes rotateSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-10px) rotate(120deg); }
+            66% { transform: translateY(5px) rotate(240deg); }
+        }
+        @keyframes morph {
+            0%, 100% { border-radius: 50%; transform: scale(1); }
+            25% { border-radius: 25%; transform: scale(1.1); }
+            50% { border-radius: 0%; transform: scale(0.9); }
+            75% { border-radius: 25%; transform: scale(1.05); }
+        }
+        @keyframes particleFloat {
+            0% { transform: translateY(0px) translateX(0px) scale(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) translateX(20px) scale(1); opacity: 0; }
+        }
+        @keyframes rainbowGlow {
+            0% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+            16.67% { box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); }
+            33.33% { box-shadow: 0 0 20px rgba(255, 255, 0, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(0, 128, 0, 0.5); }
+            66.67% { box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); }
+            83.33% { box-shadow: 0 0 20px rgba(75, 0, 130, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(238, 130, 238, 0.5); }
+        }
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            0%, 50% { border-color: transparent; }
+            51%, 100% { border-color: currentColor; }
+        }
+        .animate-rotate-slow {
+            animation: rotateSlow 20s linear infinite;
+        }
+        .animate-float-slow {
+            animation: floatSlow 6s ease-in-out infinite;
+        }
+        .animate-morph {
+            animation: morph 8s ease-in-out infinite;
+        }
+        .animate-particle-float {
+            animation: particleFloat 3s ease-out infinite;
+        }
+        .animate-rainbow-glow {
+            animation: rainbowGlow 3s linear infinite;
+        }
+        .animate-typewriter {
+            overflow: hidden;
+            border-right: 2px solid;
+            white-space: nowrap;
+            animation: typewriter 2s steps(40, end), blink 0.75s step-end infinite;
+        }
+        /* Responsive adjustments */
+        #home h1 {
+            font-size: clamp(2.2rem, 6vw, 4.5rem);
+            line-height: 1.05;
+        }
+        #home p {
+            font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+        }
+        /* Smooth mobile menu transitions when toggled */
+        #mobile-menu {
+            overflow: hidden;
+            transition: max-height 0.35s ease, opacity 0.25s ease;
+            max-height: 0;
+            opacity: 0;
+        }
+        #mobile-menu.mobile-open {
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        /* Project card polish */
+        .project-card {
+            transition: transform 200ms ease, box-shadow 200ms ease;
+            will-change: transform;
+        }
+        .project-card:active {
+            transform: scale(0.98);
+        }
+
+        /* Buttons */
+        .rounded-full,
+        button,
+        .btn {
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+        button:focus,
+        a:focus {
+            outline: none;
+            box-shadow: 0 6px 18px rgba(59,130,246,0.12);
+        }
+
+        /* Smaller screens tweaks */
+        @media (max-width: 768px) {
+            nav .hidden.md\:flex { display: none; }
+            nav .md\:hidden { display: inline-flex; }
+            .max-w-7xl { padding-left: 1rem; padding-right: 1rem; }
+            .animate-fade-in { animation-duration: 0.6s; }
+            .animate-slide-up { animation-duration: 0.55s; }
+        }
+
+        /* Ensure anchor scroll positions account for fixed header */
+        html {
+            scroll-padding-top: 88px; /* space for fixed nav */
+        }
+        /* For browsers that use element-level offset on anchors */
+        section[id] {
+            scroll-margin-top: 88px;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+        @keyframes slide-out-right {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+        .animate-slide-out-right {
+            animation: slide-out-right 0.3s ease-out;
+        }
